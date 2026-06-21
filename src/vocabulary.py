@@ -175,12 +175,16 @@ class Vocabulary:
         parts = line.split(SEPARATOR)
         if len(parts) == 5:
             term, category, adoption, team, definition, = parts
+        elif len(parts) == 4:
+            term, category, team, definition, = parts
+            adoption = DEFAULT_ADOPTION
         elif len(parts) == 2:
             term, definition = parts
             category = DEFAULT_CATEGORY
             adoption = DEFAULT_ADOPTION
             team = DEFAULT_TEAM
         else:
+            print("Vocabulary has unsupported format. Entry should be 'term :: category :: [adoption] :: team :: definition'.")
             return None
         # Strip the input
         term = term.strip()
