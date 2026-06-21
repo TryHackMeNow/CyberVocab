@@ -105,6 +105,7 @@ async def fetch_definition(term: str) -> None:
 
 
 async def handle_search_input_validation(query: str):
+    state.add_pane_forced_by_edit = False
     # Input validator is called with debounce
     print(query)
     update_results_pane(query)
@@ -125,7 +126,8 @@ async def handle_search_input_validation(query: str):
 async def handle_search_keydown(e) -> None:
     key = e.args.get("key") if isinstance(e.args, dict) else None
     if not state.search_suggestion_items:
-        return
+        if key == "ArrowDown" and state.add_pane_visible:
+            gui.new_term_input.run_method("focus")
     elif key == "ArrowDown":
         state.search_selected_index = (state.search_selected_index + 1) % len(state.search_suggestion_items)
         update_search_suggestion_menu()
@@ -140,6 +142,22 @@ async def handle_search_keydown(e) -> None:
         select_search_suggestion(state.search_suggestion_items[state.search_selected_index])
 
 
+async def handle_add_term_keyup(e) -> None:
+    key = e.args.get("key") if isinstance(e.args, dict) else None
+    if key == "Escape" or key == "ArrowUp":
+        gui.search_input.run_method("focus")
+    elif key == "Enter" and len(gui.new_term_input.value) > 0:
+        await fetch_definition(gui.new_term_input.value)
+
+
+async def handle_term_def_keyup(e) -> None:
+    key = e.args.get("key") if isinstance(e.args, dict) else None
+    if key == "Escape" or key == "ArrowUp":
+        gui.search_input.run_method("focus")
+    elif key == "Enter" and len(gui.new_term_input.value) > 0:
+        handle_add_entry(gui.new_term_input.value)
+
+
 def update_search_suggestion_menu() -> None:
     gui.search_suggestion_menu.clear()
     if num_suggestions() == 0:
@@ -147,7 +165,7 @@ def update_search_suggestion_menu() -> None:
         return
     with gui.search_suggestion_menu:
         for i, term in enumerate(state.search_suggestion_items):
-            classes = "suggestion-item"
+            classes = "suggestion-item text-base"
             if i == state.search_selected_index:
                 classes += " suggestion-item-active"
             ui.label(term).classes(classes).on("click", lambda e, t=term: select_search_suggestion(t))
@@ -185,11 +203,10 @@ def handle_edit_entry(entry, slide_item: ui.slide_item) -> bool:
 
 def handle_clear_add_pane(slide_item: ui.slide_item) -> bool:
     slide_item.reset()
+    state.add_pane_forced_by_edit = False
     gui.new_term_input.set_value("")
     gui.new_category_input.set_value("")
     gui.new_def_input.set_value("")
-    state.add_pane_forced_by_edit = False
-    update_results_pane(gui.search_input.value or "")
     return True
     
 
@@ -291,14 +308,15 @@ def build_add_pane() -> None:
         with ui.slide_item().classes("bg-color w-full") as slide_item:
             slide_item.right('Clear', color='blue', on_slide=lambda e: handle_clear_add_pane(slide_item))
             slide_item.left('Clear', color='blue', on_slide=lambda e: handle_clear_add_pane(slide_item))
-            with ui.column().classes("panel w-full accent-border-color"):
-                with ui.row().classes("w-full items-stretch"):
-                    gui.new_term_input = ui.input(placeholder="Add New Term…").classes("w-full").props("borderless autogrow")
-                    gui.new_category_input = ui.input(placeholder="Category…").classes("grow").props("borderless autogrow")
-                gui.new_def_input = ui.textarea(placeholder="Definition…").classes("w-full grow").props("borderless autogrow")
+            with ui.column().classes("panel w-full accent-border-color gap-0"):
+                # Add input fields
+                gui.new_term_input = ui.input(placeholder="Add New Term…").classes("w-full").props("borderless")
+                gui.new_category_input = ui.input(placeholder="Category…").classes("w-full").props("borderless")
+                gui.new_def_input = ui.textarea(placeholder="Definition…").classes("w-full").props("borderless autogrow")
                 # Add event handlers
-                gui.new_term_input.on("keyup.enter", lambda e: fetch_definition(gui.new_term_input.value))
-                gui.new_def_input.on("keyup.enter", lambda e: handle_add_entry())
+                gui.new_term_input.on("keyup", lambda e: handle_add_term_keyup(e))
+                gui.new_def_input.on("keyup", lambda e: handle_term_def_keyup(e))
+                gui.new_category_input.on("keyup", lambda e: handle_term_def_keyup(e))
     
 
 def build_term_frame(entry) -> None:

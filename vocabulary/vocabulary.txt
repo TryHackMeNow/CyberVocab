@@ -1,229 +1,230 @@
-Sideloading :: Mobile Security :: Adopted :: Purple :: Installation von Apps aus inoffiziellen Quellen außerhalb der genehmigten App-Stores, was das Risiko von Malware erhöht.
-Phishing :: Social Engineering :: Adopted :: Red :: Betrügerischer Versuch, durch gefälschte Kommunikation an sensible Daten wie Passwörter zu gelangen.
-Vishing :: Social Engineering :: Adopted :: Red :: Voice-Phishing; betrügerische Angriffe über Telefonanrufe zur Erlangung vertraulicher Informationen.
-Smishing :: Social Engineering :: Adopted :: Red :: SMS-Phishing; Nutzung von Textnachrichten, um Opfer auf schädliche Links zu locken.
-Tailgating :: Physical Security :: Adopted :: Red :: Physisches Eindringen in gesicherte Bereiche durch Folgen einer autorisierten Person.
-Typosquatting :: Web Security :: Adopted :: Red :: Registrierung von Domains mit Tippfehlern bekannter Seiten, um Nutzer auf schädliche Inhalte umzuleiten.
-Impersonation :: Social Engineering :: Adopted :: Red :: Vortäuschen einer falschen Identität (Person oder System), um Vertrauen zu erschleichen und Zugriff zu erlangen.
-Watering Hole :: Network Security :: Adopted :: Red :: Kompromittierung von Websites, die von einer spezifischen Zielgruppe häufig besucht werden.
-Shoulder Surfing :: Physical Security :: Adopted :: Red :: Ausspähen von sensiblen Daten durch direkte Beobachtung der Eingabe am Bildschirm oder Keyboard.
-Dumpster Diving :: Physical Security :: Adopted :: Red :: Durchsuchen von Müll nach weggeworfenen Dokumenten oder Hardware mit sensiblen Informationen.
-Jailbreaking :: Mobile Security :: Adopted :: Red :: Entfernen von Softwarebeschränkungen auf Geräten, um Root-Zugriff und nicht autorisierte Installationen zu ermöglichen.
-Cross-Site Scripting (XSS) :: Web Security :: Adopted :: Red :: Einschleusen von Skripten in vertrauenswürdige Webseiten, die im Browser anderer Nutzer ausgeführt werden.
-Cross-Site Request Forgery (CSRF) :: Web Security :: Adopted :: Red :: Erzwingen unerwünschter Aktionen in einer Webanwendung, bei der der Nutzer authentifiziert ist.
-SQL Injection (SQLi) :: Web Security :: Adopted :: Red :: Einschleusen von SQL-Befehlen über Eingabefelder, um Datenbanken zu manipulieren oder auszulesen.
-DDoS Attack :: Network Security :: Adopted :: Red :: Distributed Denial of Service; Überlastung eines Systems durch massiven Traffic von vielen Quellen.
-VM Escape :: Virtualization :: Emerging :: Red :: Ausbrechen aus einer virtuellen Maschine, um Zugriff auf den darunterliegenden Host oder andere VMs zu erlangen.
-Legacy System :: Infrastructure :: Adopted :: Blue :: Veraltete Hard- oder Software, die noch im Einsatz ist, aber oft keine Sicherheitsupdates mehr erhält.
-Web Application :: Infrastructure :: Adopted :: Purple :: Software, die über einen Browser zugänglich ist und oft primäres Ziel von Angriffen darstellt.
-Buffer Overflow :: Exploit :: Adopted :: Red :: Überschreiben von Speichergrenzen durch zu lange Eingaben, um Codeausführung zu ermöglichen.
-Memory Injection :: Exploit :: Emerging :: Red :: Einschleusen von Code in den Arbeitsspeicher eines laufenden Prozesses ohne Datei auf der Festplatte.
-Process Hollowing :: Malware :: Emerging :: Red :: Ersetzen des Speichers eines legitimen Prozesses durch schädlichen Code zur Tarnung.
-Privilege Escalation :: Exploit :: Adopted :: Red :: Ausnutzen von Schwachstellen, um höhere Zugriffsrechte als ursprünglich zugewiesen zu erlangen.
-Vulnerability :: General :: Adopted :: Purple :: Eine Schwachstelle in einem System, die von Angreifern ausgenutzt werden kann, um Schaden zu verursachen.
-Windows Unquoted Service Path :: Windows Security :: Adopted :: Red :: Konfigurationsfehler, bei dem Dienstpfade Leerzeichen enthalten und zur Ausführung von Malware führen.
-Security Feature Bypass :: Exploit :: Adopted :: Red :: Techniken zum Umgehen von Sicherheitsmechanismen wie ASLR, DEP oder Authentifizierung.
-Directory Traversal :: Web Security :: Adopted :: Red :: Zugriff auf Dateien und Verzeichnisse außerhalb des vorgesehenen Web-Root-Ordners.
-Password Cracking :: Credential Attack :: Adopted :: Red :: Wiederherstellung von Passwörtern durch Erraten, Brute-Force oder Rainbow-Tables.
-Remote Code Execution (RCE) :: Exploit :: Adopted :: Red :: Schwachstelle, die es Angreifern erlaubt, beliebigen Code auf einem Zielsystem auszuführen.
-SPAM :: Email Security :: Adopted :: Blue :: Unerwünschte Massennachrichten, die oft als Vektor für Phishing oder Malware dienen.
-Chain Letters :: Social Engineering :: Niche :: Red :: Nachrichten, die zur Weiterleitung auffordern und oft Hoaxes oder Malware verbreiten.
-Baiting :: Social Engineering :: Adopted :: Red :: Locken von Opfern mit einem falschen Versprechen (z.B. infizierter USB-Stick) zum Einschleusen von Malware.
-Brand Impersonation :: Social Engineering :: Adopted :: Red :: Nachahmen bekannter Marken in Kommunikation, um Opfer zur Herausgabe von Daten zu bewegen.
-Pharming :: Network Security :: Adopted :: Red :: Umleiten von legitimen Web-Traffic auf gefälschte Seiten durch Manipulation von DNS oder Host-Dateien.
-Pretexting :: Social Engineering :: Adopted :: Red :: Erfinden eines Szenarios, um unter falschem Vorwand Informationen von einem Opfer zu erhalten.
-Supply Chain Attack :: Strategic :: Emerging :: Red :: Angriff auf ein Ziel durch Kompromittierung eines Zulieferers oder Drittanbieters in der Lieferkette.
-Default Credentials :: Configuration :: Adopted :: Red :: Werkseitig eingestellte Passwörter, die oft nicht geändert werden und einfachen Zugriff ermöglichen.
-Threat Vector :: General :: Adopted :: Purple :: Der Pfad oder das Mittel, über das ein Angreifer Zugriff auf ein System erlangt.
+# CyberSec Vocabulary — Term :: Category :: Adoption :: Team :: Definition
+ACL :: Access Control :: Adopted :: Blue :: Liste von Berechtigungen, die festlegt, wer auf welche Ressourcen zugreifen darf.
+Active Directory :: Identity :: Adopted :: Blue :: Microsoft-Dienst zur Verwaltung von Benutzern, Gruppen und Berechtigungen in Netzwerken.
+Advanced Persistent Threat (APT) :: Threat Intel :: Adopted :: Red :: Langfristige, gezielte Angriffe, oft staatlich unterstützt, die unentdeckt im Netzwerk verbleiben.
+Adware :: Malware :: Adopted :: Red :: Software, die unerwünschte Werbung einblendet und oft Daten sammelt.
+AES :: Encryption :: Adopted :: Blue :: Weit verbreiteter Verschlüsselungsstandard für symmetrische Schlüssel.
+Air Gap :: Network Security :: Adopted :: Blue :: Physische Trennung eines sicheren Netzwerks von unsicheren Netzwerken wie dem Internet.
+Antivirus :: Defense :: Adopted :: Blue :: Software zur Erkennung, Verhinderung und Entfernung von Malware auf Endgeräten.
+API Security :: Web Security :: Emerging :: Blue :: Maßnahmen zum Schutz von Schnittstellen vor Missbrauch und Angriffen.
+ARP Spoofing :: Network Attack :: Adopted :: Red :: Senden gefälschter ARP-Nachrichten, um Datenverkehr auf den Angreifer umzuleiten.
 Attack Surface :: General :: Adopted :: Blue :: Die Gesamtheit aller möglichen Angriffspunkte, an denen ein Unbefugter in ein System eindringen kann.
 Attack Surface Reduction :: Strategy :: Adopted :: Blue :: Maßnahmen zur Minimierung der Angriffsfläche durch Deaktivierung unnötiger Dienste.
-Blue Team :: Operations :: Adopted :: Blue :: Das defensive Sicherheitsteam, das für den Schutz und die Überwachung der Infrastruktur zuständig ist.
-Red Team :: Operations :: Adopted :: Red :: Das offensive Sicherheitsteam, das reale Angriffe simuliert, um Schwachstellen zu finden.
-Pentesting :: Operations :: Adopted :: Purple :: Autorisierte simulierte Angriffe zur Bewertung der Sicherheit eines Systems.
-Hacker :: General :: Adopted :: Purple :: Person mit fortgeschrittenen Computerkenntnissen, eingeteilt nach ethischer Motivation (White/Black Hat).
-Hacking :: General :: Adopted :: Purple :: Die Tätigkeit des Identifizierens und Ausnutzens von Schwachstellen in Computersystemen.
-Social Engineering :: Human Security :: Adopted :: Red :: Psychologische Manipulation von Menschen, um Sicherheitsmaßnahmen zu umgehen.
-Phishing Campaign :: Social Engineering :: Adopted :: Red :: Koordinierte Serie von Phishing-Angriffen gegen eine spezifische Gruppe oder Organisation.
-Shadow IT :: Governance :: Adopted :: Blue :: Nutzung von IT-Systemen oder Software ohne explizite Genehmigung der IT-Abteilung.
-Insider Threat :: Human Security :: Adopted :: Purple :: Bedrohung durch Personen innerhalb der Organisation, sei es böswillig oder fahrlässig.
-Blackmail :: Social Engineering :: Adopted :: Red :: Erpressung durch Androhung der Veröffentlichung sensibler Informationen.
-Advanced Persistent Threat (APT) :: Threat Intel :: Adopted :: Red :: Langfristige, gezielte Angriffe, oft staatlich unterstützt, die unentdeckt im Netzwerk verbleiben.
-Script Kiddie :: General :: Adopted :: Red :: Unerfahrener Angreifer, der vorgefertigte Tools ohne tiefes Verständnis nutzt.
-White Hat :: General :: Adopted :: Red :: Ethischer Hacker, der Systeme testet, um Sicherheitslücken zu schließen.
-Black Hat :: General :: Adopted :: Red :: Krimineller Hacker, der Systeme zum persönlichen Gewinn oder Schaden angreift.
-SMB (Server Message Block) :: Network Protocol :: Adopted :: Purple :: Protokoll für Datei- und Druckerfreigabe, häufiges Ziel für Ransomware wie WannaCry.
-Samba :: Network Service :: Adopted :: Purple :: Open-Source-Implementierung von SMB für die Interoperabilität zwischen Linux und Windows.
-BSI :: Governance :: Adopted :: Blue :: Bundesamt für Sicherheit in der Informationstechnik; deutsche Behörde für Cybersicherheit.
-IT-Grundschutz :: Governance :: Adopted :: Blue :: Methodik des BSI zum Aufbau und zur Überprüfung von Informationssicherheit.
-ISO/IEC 27001 :: Governance :: Adopted :: Blue :: Internationaler Standard für Managementsysteme zur Informationssicherheit (ISMS).
 Authentication :: Identity :: Adopted :: Purple :: Der Prozess der Überprüfung der Identität eines Benutzers oder Systems.
-Zero Trust :: Architecture :: Emerging :: Blue :: Sicherheitsmodell, das keinem Nutzer oder Gerät innerhalb oder außerhalb des Netzwerks vertraut.
-DMZ (Demilitarized Zone) :: Network Security :: Adopted :: Blue :: Ein isoliertes Subnetz, das öffentliche Dienste vom internen Netzwerk trennt.
-LAN (Local Area Network) :: Network Infrastructure :: Adopted :: Blue :: Lokales Netzwerk, das Computer in einem begrenzten geografischen Bereich verbindet.
-WAN (Wide Area Network) :: Network Infrastructure :: Adopted :: Blue :: Weitverkehrsnetz, das über große geografische Distanzen reicht.
-Network Adapter :: Hardware :: Adopted :: Blue :: Hardwarekomponente, die einem Computer die Verbindung zum Netzwerk ermöglicht.
-Subnet :: Network Infrastructure :: Adopted :: Blue :: Logische Unterteilung eines IP-Netzwerks zur besseren Strukturierung und Sicherheit.
-Subnet Mask :: Network Infrastructure :: Adopted :: Blue :: Maske zur Trennung von Netzwerk- und Hostanteil einer IP-Adresse.
-Malware :: General :: Adopted :: Red :: Oberbegriff für schädliche Software, die entwickelt wurde, um Systeme zu beschädigen oder Daten zu stehlen.
-Ransomware :: Malware :: Adopted :: Red :: Schadsoftware, die Daten verschlüsselt und ein Lösegeld für die Entschlüsselung fordert.
-Antivirus :: Defense :: Adopted :: Blue :: Software zur Erkennung, Verhinderung und Entfernung von Malware auf Endgeräten.
-EDR (Endpoint Detection and Response) :: Defense :: Adopted :: Blue :: Technologie zur kontinuierlichen Überwachung und Reaktion auf Bedrohungen an Endpunkten.
-SIEM (Security Information and Event Management) :: Defense :: Adopted :: Blue :: Zentrale Sammlung und Analyse von Sicherheitslogs zur Bedrohungserkennung.
-Splunk :: Tool :: Adopted :: Blue :: Plattform zur Suche, Überwachung und Analyse von maschinengenerierten Daten und Logs.
-Snort :: Tool :: Adopted :: Blue :: Open-Source-System zur Erkennung und Verhinderung von Netzwerkeintrüchen (IDS/IPS).
-Nmap :: Tool :: Adopted :: Purple :: Netzwerk-Scanner zur Erkennung von Hosts, Diensten und Sicherheitslücken.
-CIA Triad :: General :: Adopted :: Blue :: Grundprinzipien der Sicherheit: Vertraulichkeit, Integrität und Verfügbarkeit.
-Confidentiality :: Principle :: Adopted :: Blue :: Sicherstellung, dass Informationen nur für autorisierte Personen zugänglich sind.
 Authenticity :: Principle :: Adopted :: Blue :: Gewährleistung, dass Daten und Nutzer echt und verifiziert sind.
-Integrity :: Principle :: Adopted :: Blue :: Schutz der Daten vor unbefugter Veränderung oder Manipulation.
-Cyber Resilience :: Strategy :: Emerging :: Blue :: Fähigkeit einer Organisation, Angriffe zu widerstehen, sich zu erholen und weiterzuarbeiten.
-Firewall :: Network Security :: Adopted :: Blue :: System zur Überwachung und Kontrolle des ein- und ausgehenden Netzwerkverkehrs.
-Encryption :: Cryptography :: Adopted :: Purple :: Verschlüsselung von Daten, um sie für Unbefugte unlesbar zu machen.
-SOC (Security Operations Center) :: Operations :: Adopted :: Blue :: Zentrale Einheit zur kontinuierlichen Überwachung und Abwehr von Cyberangriffen.
-Botnet :: Malware :: Adopted :: Red :: Netzwerk aus kompromittierten Geräten, die ferngesteuert für Angriffe genutzt werden.
-Active Directory :: Identity :: Adopted :: Blue :: Microsoft-Dienst zur Verwaltung von Benutzern, Gruppen und Berechtigungen in Netzwerken.
-Zero-Day :: Exploit :: Adopted :: Red :: Eine Schwachstelle, die dem Hersteller unbekannt ist und für die es noch keinen Patch gibt.
-MITRE ATT&CK :: Framework :: Adopted :: Purple :: Wissensdatenbank über Taktiken und Techniken von Angreifern basierend auf realen Beobachtungen.
-Kill Chain :: Framework :: Adopted :: Red :: Modell, das die Phasen eines Cyberangriffs von der Aufklärung bis zum Ziel beschreibt.
-IOC (Indicator of Compromise) :: Threat Intel :: Adopted :: Blue :: Artefakte (Logs, Hashes), die auf einen erfolgreichen Einbruch hinweisen.
-TTPs (Tactics, Techniques, and Procedures) :: Threat Intel :: Adopted :: Purple :: Verhaltensmuster und Methoden, die von Angreifern verwendet werden.
-Honeypot :: Defense :: Adopted :: Blue :: Ködersystem, das Angreifer anlockt, um deren Methoden zu studieren und zu erkennen.
-Air Gap :: Network Security :: Adopted :: Blue :: Physische Trennung eines sicheren Netzwerks von unsicheren Netzwerken wie dem Internet.
-Hashing :: Cryptography :: Adopted :: Purple :: Umwandlung von Daten in einen festen Wert zur Überprüfung der Integrität.
-Salting :: Cryptography :: Adopted :: Purple :: Hinzufügen zufälliger Daten zu Passwörtern vor dem Hashen, um Rainbow-Tables zu erschweren.
-Multi-Factor Authentication (MFA) :: Identity :: Adopted :: Blue :: Authentifizierung, die zwei oder mehr Nachweise (Passwort, Token, Biometrie) erfordert.
-Least Privilege :: Principle :: Adopted :: Blue :: Prinzip, Benutzern nur die minimal notwendigen Rechte für ihre Aufgabe zu gewähren.
-Defense in Depth :: Strategy :: Adopted :: Blue :: Sicherheitsansatz mit mehreren überlappenden Schutzschichten.
-Patch Management :: Operations :: Adopted :: Blue :: Prozess des Einspielens von Updates, um Sicherheitslücken in Software zu schließen.
-Incident Response :: Operations :: Adopted :: Blue :: Geplanter Prozess zur Handhabung und Bewältigung von Sicherheitsvorfällen.
-Forensics :: Operations :: Adopted :: Blue :: Untersuchung und Analyse digitaler Beweismittel nach einem Sicherheitsvorfall.
-Rootkit :: Malware :: Adopted :: Red :: Schadsoftware, die sich tief im System versteckt, um ihre Präsenz zu verbergen.
-Trojan :: Malware :: Adopted :: Red :: Schadsoftware, die als nützliches Programm getarnt ist, um Zugang zu verschaffen.
-Worm :: Malware :: Adopted :: Red :: Sich selbst replizierende Malware, die sich ohne Nutzerinteraktion über Netzwerke verbreitet.
-Spyware :: Malware :: Adopted :: Red :: Software, die heimlich Benutzeraktivitäten und Daten ausspäht.
-Adware :: Malware :: Adopted :: Red :: Software, die unerwünschte Werbung einblendet und oft Daten sammelt.
-Keylogger :: Malware :: Adopted :: Red :: Tool oder Malware, die jede Tastatureingabe aufzeichnet, um Passwörter zu stehlen.
-Logic Bomb :: Malware :: Niche :: Red :: Code, der bei Erfüllung bestimmter Bedingungen eine schädliche Aktion auslöst.
 Backdoor :: Exploit :: Adopted :: Red :: Geheimer Zugang zu einem System, der die normale Authentifizierung umgeht.
-Man-in-the-Middle (MitM) :: Network Attack :: Adopted :: Red :: Angreifer fängt Kommunikation zwischen zwei Parteien ab und manipuliert sie.
-ARP Spoofing :: Network Attack :: Adopted :: Red :: Senden gefälschter ARP-Nachrichten, um Datenverkehr auf den Angreifer umzuleiten.
-DNS Spoofing :: Network Attack :: Adopted :: Red :: Manipulation von DNS-Antworten, um Nutzer auf gefälschte Webseiten zu leiten.
-Session Hijacking :: Web Security :: Adopted :: Red :: Übernehmen einer aktiven Benutzersitzung durch Stehlen des Session-Tokens.
-Clickjacking :: Web Security :: Adopted :: Red :: Trick, bei dem Nutzer durch transparente Layer auf unsichtbare Buttons klicken.
-Brute Force :: Credential Attack :: Adopted :: Red :: Versuch, Passwörter durch systematisches Ausprobieren aller Kombinationen zu knacken.
-Dictionary Attack :: Credential Attack :: Adopted :: Red :: Angriff mit einer Liste häufig verwendeter Passwörter statt aller Kombinationen.
-Rainbow Table :: Credential Attack :: Adopted :: Red :: Vorberechnete Tabelle von Hashwerten zum schnellen Knacken von Passwörtern.
-Credential Stuffing :: Credential Attack :: Adopted :: Red :: Nutzung gestohlener Zugangsdaten von einem Dienst, um sich bei anderen anzumelden.
-Pass-the-Hash :: Credential Attack :: Adopted :: Red :: Authentifizierung mit dem Hash eines Passworts statt des Klartextpassworts.
-Kerberoasting :: Credential Attack :: Adopted :: Red :: Angriff auf Service-Accounts im Active Directory durch Offline-Cracking von Tickets.
-Golden Ticket :: Credential Attack :: Adopted :: Red :: Gefälschtes Kerberos-Ticket, das uneingeschränkten Zugriff auf die Domäne gewährt.
-Silver Ticket :: Credential Attack :: Adopted :: Red :: Gefälschtes Kerberos-Ticket für den Zugriff auf spezifische Dienste.
-Lateral Movement :: Exploit :: Adopted :: Red :: Techniken, um sich nach dem ersten Einbruch im Netzwerk von System zu System zu bewegen.
-Persistence :: Exploit :: Adopted :: Red :: Methoden, um den Zugriff auf ein System auch nach Neustarts aufrechtzuerhalten.
-C2 (Command and Control) :: Malware :: Adopted :: Red :: Infrastruktur, über die Angreifer mit kompromittierten Systemen kommunizieren.
-Exfiltration :: Attack Phase :: Adopted :: Red :: Das unerlaubte Abfließen oder Stehlen von Daten aus einem Netzwerk.
-DLP (Data Loss Prevention) :: Defense :: Adopted :: Blue :: Systeme, die verhindern, dass sensible Daten das Unternehmen verlassen.
-WAF (Web Application Firewall) :: Defense :: Adopted :: Blue :: Firewall, die speziell HTTP-Traffic filtert, um Webanwendungen zu schützen.
-IDS (Intrusion Detection System) :: Defense :: Adopted :: Blue :: System, das Netzwerkverkehr auf verdächtige Aktivitäten überwacht und alarmiert.
-IPS (Intrusion Prevention System) :: Defense :: Adopted :: Blue :: System, das erkannte Bedrohungen im Netzwerkverkehr aktiv blockiert.
-SOAR (Security Orchestration, Automation and Response) :: Defense :: Emerging :: Blue :: Plattform zur Automatisierung von Sicherheitsprozessen und Reaktionen.
-Threat Hunting :: Operations :: Emerging :: Blue :: Proaktive Suche nach versteckten Bedrohungen, die von automatischen Tools übersehen wurden.
-Vulnerability Scanning :: Operations :: Adopted :: Blue :: Automatisierter Prozess zur Identifizierung bekannter Sicherheitslücken.
-Risk Assessment :: Governance :: Adopted :: Blue :: Bewertung von Risiken durch Analyse von Bedrohungen, Schwachstellen und Auswirkungen.
-Compliance :: Governance :: Adopted :: Blue :: Einhaltung gesetzlicher Vorschriften, Standards und interner Richtlinien.
-GDPR :: Governance :: Adopted :: Blue :: EU-Datenschutz-Grundverordnung zum Schutz personenbezogener Daten.
-HIPAA :: Governance :: Adopted :: Blue :: US-Gesetz zum Schutz sensibler Patientendaten im Gesundheitswesen.
-PCI DSS :: Governance :: Adopted :: Blue :: Sicherheitsstandard für Organisationen, die Kreditkartentransaktionen verarbeiten.
-NIST :: Framework :: Adopted :: Blue :: US-Institut, das Richtlinien und Frameworks für Cybersicherheit entwickelt.
-CIS Controls :: Framework :: Adopted :: Blue :: Sammlung bewährter Maßnahmen zur Abwehr von Cyberangriffen.
-Threat Intelligence :: Intel :: Adopted :: Purple :: Fundiertes Wissen über bestehende oder entstehende Bedrohungen und Akteure.
-OSINT (Open Source Intelligence) :: Intel :: Adopted :: Purple :: Sammlung von Informationen aus öffentlich zugänglichen Quellen.
-Dark Web :: Network :: Adopted :: Purple :: Teil des Internets, der nur mit spezieller Software erreichbar ist und oft für illegale Aktivitäten genutzt wird.
-Deep Web :: Network :: Adopted :: Purple :: Nicht indexierter Teil des Internets, der meist legale Datenbanken und private Bereiche umfasst.
-Tor :: Tool :: Adopted :: Purple :: Netzwerk zur anonymen Kommunikation durch mehrfaches Umleiten des Datenverkehrs.
-Proxy :: Network :: Adopted :: Purple :: Server, der als Vermittler zwischen Client und Zielserver fungiert.
-VPN (Virtual Private Network) :: Network :: Adopted :: Blue :: Verschlüsselte Verbindung über ein unsicheres Netzwerk zum Schutz der Daten.
-SSL/TLS :: Cryptography :: Adopted :: Blue :: Protokolle zur sicheren Verschlüsselung der Kommunikation im Internet.
-PKI (Public Key Infrastructure) :: Cryptography :: Adopted :: Blue :: System zur Verwaltung digitaler Zertifikate und Schlüssel für sichere Kommunikation.
-Certificate Authority (CA) :: Cryptography :: Adopted :: Blue :: Vertrauenswürdige Stelle, die digitale Zertifikate ausstellt und signiert.
-Self-Signed Certificate :: Cryptography :: Adopted :: Blue :: Zertifikat, das nicht von einer vertrauenswürdigen CA signiert wurde.
-Hash Collision :: Cryptography :: Niche :: Red :: Seltenes Ereignis, bei dem zwei verschiedene Eingaben denselben Hash-Wert erzeugen.
-Salami Slicing :: Fraud :: Niche :: Red :: Betrug durch Anhäufung vieler kleiner, unauffälliger Beträge oder Datenmengen.
-Evil Twin :: Network Attack :: Adopted :: Red :: Gefälschter WLAN-Zugangspunkt, der einen legitimen Hotspot imitiert.
-War Driving :: Network Attack :: Niche :: Red :: Aufspüren von WLAN-Netzwerken aus einem fahrenden Fahrzeug heraus.
+Badge Cloning :: Physical Security :: Adopted :: Red :: Kopieren von Daten einer Zugangskarte auf einen Rohling.
+BadUSB :: Hardware :: Adopted :: Red :: Manipulation der USB-Firmware, um das Gerät als Tastatur oder Netzwerkadapter auszugeben.
+Baiting :: Social Engineering :: Adopted :: Red :: Locken von Opfern mit einem falschen Versprechen (z.B. infizierter USB-Stick) zum Einschleusen von Malware.
+Biometrics :: Authentication :: Adopted :: Blue :: Authentifizierung anhand biologischer Merkmale wie Fingerabdruck oder Gesicht.
+Black Hat :: General :: Adopted :: Red :: Krimineller Hacker, der Systeme zum persönlichen Gewinn oder Schaden angreift.
+Blackmail :: Social Engineering :: Adopted :: Red :: Erpressung durch Androhung der Veröffentlichung sensibler Informationen.
+Blue Team :: Operations :: Adopted :: Blue :: Das defensive Sicherheitsteam, das für den Schutz und die Überwachung der Infrastruktur zuständig ist.
 Bluejacking :: Network Attack :: Niche :: Red :: Senden unerwünschter Nachrichten an Bluetooth-fähige Geräte in der Nähe.
 Bluesnarfing :: Network Attack :: Niche :: Red :: Unbefugter Zugriff auf Daten eines Geräts über eine Bluetooth-Verbindung.
-RFID Skimming :: Physical Security :: Adopted :: Red :: Auslesen von RFID-Chips (z.B. in Kreditkarten) ohne physischen Kontakt.
-Badge Cloning :: Physical Security :: Adopted :: Red :: Kopieren von Daten einer Zugangskarte auf einen Rohling.
-Clean Desk Policy :: Physical Security :: Adopted :: Blue :: Richtlinie, sensible Dokumente und Geräte bei Abwesenheit wegzuschließen.
-Secure Disposal :: Physical Security :: Adopted :: Blue :: Sichere Vernichtung von Datenträgern, um Wiederherstellung zu verhindern.
-Shredding :: Physical Security :: Adopted :: Blue :: Physisches Zerreißen von Papierdokumenten zur Datenvernichtung.
-Degaussing :: Physical Security :: Adopted :: Blue :: Löschen magnetischer Datenträger durch starke Magnetfelder.
-Cryptojacking :: Malware :: Emerging :: Red :: Unbefugte Nutzung von Rechenleistung eines Opfers zum Schürfen von Kryptowährungen.
-Fileless Malware :: Malware :: Emerging :: Red :: Malware, die nur im Arbeitsspeicher läuft und keine Spuren auf der Festplatte hinterlässt.
-Polymorphic Malware :: Malware :: Adopted :: Red :: Schadsoftware, die ihren Code ständig ändert, um Erkennung zu vermeiden.
-Metamorphic Malware :: Malware :: Niche :: Red :: Malware, die ihren eigenen Code komplett umschreibt, um unerkennbar zu bleiben.
-Macro Virus :: Malware :: Adopted :: Red :: Virus, der in Makros von Dokumenten (z.B. Word, Excel) eingebettet ist.
 Boot Sector Virus :: Malware :: Niche :: Red :: Virus, der den Master Boot Record infiziert und beim Start ausgeführt wird.
-Ransomware-as-a-Service (RaaS) :: Business Model :: Emerging :: Red :: Geschäftsmodell, bei dem Ransomware an Affiliates vermietet wird.
-Living off the Land (LotL) :: Technique :: Adopted :: Red :: Nutzung legitimer Systemtools durch Angreifer, um unentdeckt zu bleiben.
-LOLBins :: Technique :: Adopted :: Red :: Legitime Binärdateien, die für bösartige Zwecke missbraucht werden.
-Drive-by Download :: Attack Vector :: Adopted :: Red :: Unbeabsichtigtes Herunterladen von Malware beim Besuch einer kompromittierten Webseite.
-Initial Access Broker :: Threat Actor :: Emerging :: Red :: Akteur, der sich auf den initialen Zugang spezialisiert hat, um diesen weiterzuverkaufen.
-Double Extortion :: Ransomware :: Emerging :: Red :: Strategie, bei der Daten verschlüsselt UND mit Veröffentlichung gedroht wird.
-Wiper :: Malware :: Adopted :: Red :: Schadsoftware, die primär darauf abzielt, Daten unwiederbringlich zu löschen statt zu stehlen.
-Scareware :: Malware :: Adopted :: Red :: Software, die Nutzer durch gefälschte Warnungen zum Kauf nutzloser Programme drängt.
-Packet Sniffer :: Tool :: Adopted :: Purple :: Tool zum Mitschneiden und Analysieren von Netzwerkdatenverkehr.
-Port Scanner :: Tool :: Adopted :: Purple :: Tool zum Scannen von offenen Ports und Diensten auf einem Zielhost.
-Cloud Jacking :: Cloud Security :: Emerging :: Red :: Unbefugte Nutzung von Cloud-Ressourcen für kriminelle Aktivitäten.
-Container Escape :: Cloud Security :: Emerging :: Red :: Ausbrechen aus einer Container-Umgebung auf den Host-Server.
-API Security :: Web Security :: Emerging :: Blue :: Maßnahmen zum Schutz von Schnittstellen vor Missbrauch und Angriffen.
+Botnet :: Malware :: Adopted :: Red :: Netzwerk aus kompromittierten Geräten, die ferngesteuert für Angriffe genutzt werden.
+Brand Impersonation :: Social Engineering :: Adopted :: Red :: Nachahmen bekannter Marken in Kommunikation, um Opfer zur Herausgabe von Daten zu bewegen.
 Broken Object Level Authorization :: Web Security :: Adopted :: Red :: Schwachstelle, die Zugriff auf Objekte anderer Nutzer ermöglicht.
-SSRF (Server-Side Request Forgery) :: Web Security :: Adopted :: Red :: Angriff, bei dem der Server gezwungen wird, Anfragen an interne Systeme zu senden.
-XXE (XML External Entity) :: Web Security :: Adopted :: Red :: Ausnutzen von XML-Parsern, um auf interne Dateien zuzugreifen.
-Subdomain Takeover :: Web Security :: Adopted :: Red :: Übernehmen eines Subdomains, das auf einen nicht mehr existierenden externen Dienst zeigt.
+Brute Force :: Credential Attack :: Adopted :: Red :: Versuch, Passwörter durch systematisches Ausprobieren aller Kombinationen zu knacken.
+BSI :: Governance :: Adopted :: Blue :: Bundesamt für Sicherheit in der Informationstechnik; deutsche Behörde für Cybersicherheit.
+Buffer Overflow :: Exploit :: Adopted :: Red :: Überschreiben von Speichergrenzen durch zu lange Eingaben, um Codeausführung zu ermöglichen.
+C2 (Command and Control) :: Malware :: Adopted :: Red :: Infrastruktur, über die Angreifer mit kompromittierten Systemen kommunizieren.
 Cache Poisoning :: Network Attack :: Adopted :: Red :: Einschleusen falscher Daten in einen Cache, um Nutzer auf schädliche Inhalte umzuleiten.
-SYN Flood :: Network Attack :: Adopted :: Red :: DoS-Angriff durch Senden vieler SYN-Pakete ohne Abschluss des Handshakes.
-IoT Botnet :: Malware :: Adopted :: Red :: Netzwerk aus kompromittierten Internet-of-Things-Geräten für Angriffe.
-Mirai :: Malware :: Adopted :: Red :: Bekannte Malware, die IoT-Geräte infiziert und für DDoS-Angriffe nutzt.
-WannaCry :: Ransomware :: Adopted :: Red :: Ransomware, die sich über die SMB-Schwachstelle EternalBlue weltweit verbreitete.
-Log4Shell :: Vulnerability :: Adopted :: Red :: Kritische Schwachstelle in der Log4j-Bibliothek, die Remote-Code-Ausführung erlaubt.
-Heartbleed :: Vulnerability :: Adopted :: Red :: Schwachstelle in OpenSSL, die das Auslesen von Serverspeichern ermöglichte.
-EternalBlue :: Exploit :: Adopted :: Red :: Exploit für SMBv1, der von der NSA entwickelt und später geleakt wurde.
-BadUSB :: Hardware :: Adopted :: Red :: Manipulation der USB-Firmware, um das Gerät als Tastatur oder Netzwerkadapter auszugeben.
-USB Rubber Ducky :: Tool :: Adopted :: Red :: Werkzeug, das als USB-Stick getarnt Tastatureingaben simuliert.
-WiFi Pineapple :: Tool :: Adopted :: Red :: Gerät zur Durchführung von WLAN-Sicherheitsaudits und Man-in-the-Middle-Angriffen.
-YubiKey :: Hardware :: Adopted :: Blue :: Hardware-Token für starke Zwei-Faktor-Authentifizierung.
-FIDO2 :: Standard :: Adopted :: Blue :: Offener Standard für passwortlose Authentifizierung.
-WebAuthn :: Standard :: Adopted :: Blue :: W3C-Standard für Web-Authentifizierung, Teil von FIDO2.
-OTP :: Authentication :: Adopted :: Blue :: Einmalpasswort, das nur für eine einzige Anmeldung gültig ist.
-TOTP :: Authentication :: Adopted :: Blue :: Zeitbasiertes Einmalpasswort, das alle 30 Sekunden wechselt.
-Biometrics :: Authentication :: Adopted :: Blue :: Authentifizierung anhand biologischer Merkmale wie Fingerabdruck oder Gesicht.
-Single Sign-On (SSO) :: Authentication :: Adopted :: Blue :: Mechanismus, der einmaliges Anmelden für mehrere Dienste ermöglicht.
-SAML :: Protocol :: Adopted :: Blue :: Standard für den Austausch von Authentifizierungs- und Autorisierungsdaten.
-OAuth :: Protocol :: Adopted :: Blue :: Standard für delegierte Autorisierung, oft für "Login mit..." genutzt.
-JWT :: Token :: Adopted :: Blue :: Kompaktes, URL-sicheres Format zur sicheren Übertragung von Informationen als JSON-Objekt.
-Service Account :: Identity :: Adopted :: Blue :: Konto für Anwendungen oder Dienste, nicht für menschliche Nutzer.
-Privileged Account :: Identity :: Adopted :: Blue :: Konto mit erweiterten Rechten, das besonderen Schutz erfordert.
-Domain Admin :: Identity :: Adopted :: Blue :: Hochprivilegiertes Konto mit Verwaltungszugriff auf die gesamte Windows-Domäne.
-Root :: Identity :: Adopted :: Blue :: Superuser-Konto in Unix/Linux-Systemen mit vollständiger Kontrolle.
-ACL :: Access Control :: Adopted :: Blue :: Liste von Berechtigungen, die festlegt, wer auf welche Ressourcen zugreifen darf.
-RBAC :: Access Control :: Adopted :: Blue :: Rollenbasierte Zugriffskontrolle, bei der Rechte an Rollen statt Personen vergeben werden.
-Separation of Duties :: Principle :: Adopted :: Blue :: Prinzip, kritische Aufgaben auf mehrere Personen zu verteilen, um Betrug zu verhindern.
-Mantrap :: Physical Security :: Adopted :: Blue :: Schleusensystem mit zwei Türen, das nur eine Person gleichzeitig durchlässt.
 CCTV :: Physical Security :: Adopted :: Blue :: Videoüberwachungssystem zur Aufzeichnung und Überwachung von Bereichen.
-Stingray :: Tool :: Adopted :: Red :: Gerät, das eine Mobilfunkbasisstation imitiert, um Handys in der Umgebung zu orten.
-WPA3 :: Protocol :: Emerging :: Blue :: Aktuellster Sicherheitsstandard für WLAN-Verschlüsselung.
-AES :: Encryption :: Adopted :: Blue :: Weit verbreiteter Verschlüsselungsstandard für symmetrische Schlüssel.
-RSA :: Encryption :: Adopted :: Blue :: Asymmetrisches Verschlüsselungsverfahren, häufig für Schlüsselaustausch genutzt.
-Perfect Forward Secrecy :: Property :: Adopted :: Blue :: Eigenschaft, die sicherstellt, dass kompromittierte Langzeitschlüssel alte Sitzungen nicht gefährden.
-Post-Quantum Cryptography :: Emerging :: Emerging :: Blue :: Kryptographische Algorithmen, die gegen Angriffe durch Quantencomputer resistent sind.
-Digital Signature :: Concept :: Adopted :: Blue :: Kryptographischer Nachweis der Authentizität und Integrität digitaler Dokumente.
+Certificate Authority (CA) :: Cryptography :: Adopted :: Blue :: Vertrauenswürdige Stelle, die digitale Zertifikate ausstellt und signiert.
 Certificate Transparency :: Concept :: Adopted :: Blue :: System zur öffentlichen Protokollierung aller ausgestellten SSL/TLS-Zertifikate.
-Log Aggregation :: Defense :: Adopted :: Blue :: Zentralisiertes Sammeln von Logs verschiedener Quellen zur Analyse.
-SIEM :: Defense :: Adopted :: Blue :: Kombination aus Security Information Management und Event Management für Echtzeitanalyse.
-Splunk :: Tool :: Adopted :: Blue :: Führende Plattform für die Analyse großer Datenmengen und Sicherheitslogs.
-Kali Linux :: Distribution :: Adopted :: Red :: Linux-Distribution, die speziell für Penetration Testing und Security Audits entwickelt wurde.
-Phishing-as-a-Service (PhaaS) :: Business Model :: Emerging :: Red :: Plattformen, die Phishing-Infrastruktur gegen Gebühr anbieten.
+Chain Letters :: Social Engineering :: Niche :: Red :: Nachrichten, die zur Weiterleitung auffordern und oft Hoaxes oder Malware verbreiten.
+CIA Triad :: General :: Adopted :: Blue :: Grundprinzipien der Sicherheit: Vertraulichkeit, Integrität und Verfügbarkeit.
+CIS Controls :: Framework :: Adopted :: Blue :: Sammlung bewährter Maßnahmen zur Abwehr von Cyberangriffen.
+Clean Desk Policy :: Physical Security :: Adopted :: Blue :: Richtlinie, sensible Dokumente und Geräte bei Abwesenheit wegzuschließen.
+Clickjacking :: Web Security :: Adopted :: Red :: Trick, bei dem Nutzer durch transparente Layer auf unsichtbare Buttons klicken.
+Cloud Jacking :: Cloud Security :: Emerging :: Red :: Unbefugte Nutzung von Cloud-Ressourcen für kriminelle Aktivitäten.
+Compliance :: Governance :: Adopted :: Blue :: Einhaltung gesetzlicher Vorschriften, Standards und interner Richtlinien.
+Confidentiality :: Principle :: Adopted :: Blue :: Sicherstellung, dass Informationen nur für autorisierte Personen zugänglich sind.
+Container Escape :: Cloud Security :: Emerging :: Red :: Ausbrechen aus einer Container-Umgebung auf den Host-Server.
+Credential Stuffing :: Credential Attack :: Adopted :: Red :: Nutzung gestohlener Zugangsdaten von einem Dienst, um sich bei anderen anzumelden.
+Cross-Site Request Forgery (CSRF) :: Web Security :: Adopted :: Red :: Erzwingen unerwünschter Aktionen in einer Webanwendung, bei der der Nutzer authentifiziert ist.
+Cross-Site Scripting (XSS) :: Web Security :: Adopted :: Red :: Einschleusen von Skripten in vertrauenswürdige Webseiten, die im Browser anderer Nutzer ausgeführt werden.
+Cryptojacking :: Malware :: Emerging :: Red :: Unbefugte Nutzung von Rechenleistung eines Opfers zum Schürfen von Kryptowährungen.
+Cyber Resilience :: Strategy :: Emerging :: Blue :: Fähigkeit einer Organisation, Angriffe zu widerstehen, sich zu erholen und weiterzuarbeiten.
+Dark Web :: Network :: Adopted :: Purple :: Teil des Internets, der nur mit spezieller Software erreichbar ist und oft für illegale Aktivitäten genutzt wird.
+DDoS Attack :: Network Security :: Adopted :: Red :: Distributed Denial of Service; Überlastung eines Systems durch massiven Traffic von vielen Quellen.
+Deep Web :: Network :: Adopted :: Purple :: Nicht indexierter Teil des Internets, der meist legale Datenbanken und private Bereiche umfasst.
 Deepfake :: Social Engineering :: Emerging :: Red :: KI-generierte Medien, die Personen täuschend echt nachahmen, um zu täuschen.
+Default Credentials :: Configuration :: Adopted :: Red :: Werkseitig eingestellte Passwörter, die oft nicht geändert werden und einfachen Zugriff ermöglichen.
+Defense in Depth :: Strategy :: Adopted :: Blue :: Sicherheitsansatz mit mehreren überlappenden Schutzschichten.
+Degaussing :: Physical Security :: Adopted :: Blue :: Löschen magnetischer Datenträger durch starke Magnetfelder.
+Dictionary Attack :: Credential Attack :: Adopted :: Red :: Angriff mit einer Liste häufig verwendeter Passwörter statt aller Kombinationen.
+Digital Signature :: Concept :: Adopted :: Blue :: Kryptographischer Nachweis der Authentizität und Integrität digitaler Dokumente.
+Directory Traversal :: Web Security :: Adopted :: Red :: Zugriff auf Dateien und Verzeichnisse außerhalb des vorgesehenen Web-Root-Ordners.
+DLP (Data Loss Prevention) :: Defense :: Adopted :: Blue :: Systeme, die verhindern, dass sensible Daten das Unternehmen verlassen.
+DMZ (Demilitarized Zone) :: Network Security :: Adopted :: Blue :: Ein isoliertes Subnetz, das öffentliche Dienste vom internen Netzwerk trennt.
+DNS Spoofing :: Network Attack :: Adopted :: Red :: Manipulation von DNS-Antworten, um Nutzer auf gefälschte Webseiten zu leiten.
+Domain Admin :: Identity :: Adopted :: Blue :: Hochprivilegiertes Konto mit Verwaltungszugriff auf die gesamte Windows-Domäne.
+Double Extortion :: Ransomware :: Emerging :: Red :: Strategie, bei der Daten verschlüsselt UND mit Veröffentlichung gedroht wird.
+Drive-by Download :: Attack Vector :: Adopted :: Red :: Unbeabsichtigtes Herunterladen von Malware beim Besuch einer kompromittierten Webseite.
+Dumpster Diving :: Physical Security :: Adopted :: Red :: Durchsuchen von Müll nach weggeworfenen Dokumenten oder Hardware mit sensiblen Informationen.
+EDR (Endpoint Detection and Response) :: Defense :: Adopted :: Blue :: Technologie zur kontinuierlichen Überwachung und Reaktion auf Bedrohungen an Endpunkten.
+Encryption :: Cryptography :: Adopted :: Purple :: Verschlüsselung von Daten, um sie für Unbefugte unlesbar zu machen.
+EternalBlue :: Exploit :: Adopted :: Red :: Exploit für SMBv1, der von der NSA entwickelt und später geleakt wurde.
+Evil Twin :: Network Attack :: Adopted :: Red :: Gefälschter WLAN-Zugangspunkt, der einen legitimen Hotspot imitiert.
+Exfiltration :: Attack Phase :: Adopted :: Red :: Das unerlaubte Abfließen oder Stehlen von Daten aus einem Netzwerk.
+FIDO2 :: Standard :: Adopted :: Blue :: Offener Standard für passwortlose Authentifizierung.
+Fileless Malware :: Malware :: Emerging :: Red :: Malware, die nur im Arbeitsspeicher läuft und keine Spuren auf der Festplatte hinterlässt.
+Firewall :: Network Security :: Adopted :: Blue :: System zur Überwachung und Kontrolle des ein- und ausgehenden Netzwerkverkehrs.
+Forensics :: Operations :: Adopted :: Blue :: Untersuchung und Analyse digitaler Beweismittel nach einem Sicherheitsvorfall.
+GDPR :: Governance :: Adopted :: Blue :: EU-Datenschutz-Grundverordnung zum Schutz personenbezogener Daten.
+Golden Ticket :: Credential Attack :: Adopted :: Red :: Gefälschtes Kerberos-Ticket, das uneingeschränkten Zugriff auf die Domäne gewährt.
+Hacker :: General :: Adopted :: Purple :: Person mit fortgeschrittenen Computerkenntnissen, eingeteilt nach ethischer Motivation (White/Black Hat).
+Hacking :: General :: Adopted :: Purple :: Die Tätigkeit des Identifizierens und Ausnutzens von Schwachstellen in Computersystemen.
+Hash Collision :: Cryptography :: Niche :: Red :: Seltenes Ereignis, bei dem zwei verschiedene Eingaben denselben Hash-Wert erzeugen.
+Hashing :: Cryptography :: Adopted :: Purple :: Umwandlung von Daten in einen festen Wert zur Überprüfung der Integrität.
+Heartbleed :: Vulnerability :: Adopted :: Red :: Schwachstelle in OpenSSL, die das Auslesen von Serverspeichern ermöglichte.
+HIPAA :: Governance :: Adopted :: Blue :: US-Gesetz zum Schutz sensibler Patientendaten im Gesundheitswesen.
+Honeypot :: Defense :: Adopted :: Blue :: Ködersystem, das Angreifer anlockt, um deren Methoden zu studieren und zu erkennen.
+IDS (Intrusion Detection System) :: Defense :: Adopted :: Blue :: System, das Netzwerkverkehr auf verdächtige Aktivitäten überwacht und alarmiert.
+Impersonation :: Social Engineering :: Adopted :: Red :: Vortäuschen einer falschen Identität (Person oder System), um Vertrauen zu erschleichen und Zugriff zu erlangen.
+Incident Response :: Operations :: Adopted :: Blue :: Geplanter Prozess zur Handhabung und Bewältigung von Sicherheitsvorfällen.
+Initial Access Broker :: Threat Actor :: Emerging :: Red :: Akteur, der sich auf den initialen Zugang spezialisiert hat, um diesen weiterzuverkaufen.
+Insider Threat :: Human Security :: Adopted :: Purple :: Bedrohung durch Personen innerhalb der Organisation, sei es böswillig oder fahrlässig.
+Integrity :: Principle :: Adopted :: Blue :: Schutz der Daten vor unbefugter Veränderung oder Manipulation.
+IOC (Indicator of Compromise) :: Threat Intel :: Adopted :: Blue :: Artefakte (Logs, Hashes), die auf einen erfolgreichen Einbruch hinweisen.
+IoT Botnet :: Malware :: Adopted :: Red :: Netzwerk aus kompromittierten Internet-of-Things-Geräten für Angriffe.
+IPS (Intrusion Prevention System) :: Defense :: Adopted :: Blue :: System, das erkannte Bedrohungen im Netzwerkverkehr aktiv blockiert.
+ISO/IEC 27001 :: Governance :: Adopted :: Blue :: Internationaler Standard für Managementsysteme zur Informationssicherheit (ISMS).
+IT-Grundschutz :: Governance :: Adopted :: Blue :: Methodik des BSI zum Aufbau und zur Überprüfung von Informationssicherheit.
+Jailbreaking :: Mobile Security :: Adopted :: Red :: Entfernen von Softwarebeschränkungen auf Geräten, um Root-Zugriff und nicht autorisierte Installationen zu ermöglichen.
+JWT :: Token :: Adopted :: Blue :: Kompaktes, URL-sicheres Format zur sicheren Übertragung von Informationen als JSON-Objekt.
+Kali Linux :: Distribution :: Adopted :: Red :: Linux-Distribution, die speziell für Penetration Testing und Security Audits entwickelt wurde.
+Kerberoasting :: Credential Attack :: Adopted :: Red :: Angriff auf Service-Accounts im Active Directory durch Offline-Cracking von Tickets.
+Keylogger :: Malware :: Adopted :: Red :: Tool oder Malware, die jede Tastatureingabe aufzeichnet, um Passwörter zu stehlen.
+Kill Chain :: Framework :: Adopted :: Red :: Modell, das die Phasen eines Cyberangriffs von der Aufklärung bis zum Ziel beschreibt.
+LAN (Local Area Network) :: Network Infrastructure :: Adopted :: Blue :: Lokales Netzwerk, das Computer in einem begrenzten geografischen Bereich verbindet.
+Lateral Movement :: Exploit :: Adopted :: Red :: Techniken, um sich nach dem ersten Einbruch im Netzwerk von System zu System zu bewegen.
+Least Privilege :: Principle :: Adopted :: Blue :: Prinzip, Benutzern nur die minimal notwendigen Rechte für ihre Aufgabe zu gewähren.
+Legacy System :: Infrastructure :: Adopted :: Blue :: Veraltete Hard- oder Software, die noch im Einsatz ist, aber oft keine Sicherheitsupdates mehr erhält.
+Living off the Land (LotL) :: Technique :: Adopted :: Red :: Nutzung legitimer Systemtools durch Angreifer, um unentdeckt zu bleiben.
+Log Aggregation :: Defense :: Adopted :: Blue :: Zentralisiertes Sammeln von Logs verschiedener Quellen zur Analyse.
+Log4Shell :: Vulnerability :: Adopted :: Red :: Kritische Schwachstelle in der Log4j-Bibliothek, die Remote-Code-Ausführung erlaubt.
+Logic Bomb :: Malware :: Niche :: Red :: Code, der bei Erfüllung bestimmter Bedingungen eine schädliche Aktion auslöst.
+LOLBins :: Technique :: Adopted :: Red :: Legitime Binärdateien, die für bösartige Zwecke missbraucht werden.
+Macro Virus :: Malware :: Adopted :: Red :: Virus, der in Makros von Dokumenten (z.B. Word, Excel) eingebettet ist.
+Malware :: General :: Adopted :: Red :: Oberbegriff für schädliche Software, die entwickelt wurde, um Systeme zu beschädigen oder Daten zu stehlen.
+Man-in-the-Middle (MitM) :: Network Attack :: Adopted :: Red :: Angreifer fängt Kommunikation zwischen zwei Parteien ab und manipuliert sie.
+Mantrap :: Physical Security :: Adopted :: Blue :: Schleusensystem mit zwei Türen, das nur eine Person gleichzeitig durchlässt.
+Memory Injection :: Exploit :: Emerging :: Red :: Einschleusen von Code in den Arbeitsspeicher eines laufenden Prozesses ohne Datei auf der Festplatte.
+Metamorphic Malware :: Malware :: Niche :: Red :: Malware, die ihren eigenen Code komplett umschreibt, um unerkennbar zu bleiben.
+Mirai :: Malware :: Adopted :: Red :: Bekannte Malware, die IoT-Geräte infiziert und für DDoS-Angriffe nutzt.
+MITRE ATT&CK :: Framework :: Adopted :: Purple :: Wissensdatenbank über Taktiken und Techniken von Angreifern basierend auf realen Beobachtungen.
+Multi-Factor Authentication (MFA) :: Identity :: Adopted :: Blue :: Authentifizierung, die zwei oder mehr Nachweise (Passwort, Token, Biometrie) erfordert.
+Network Adapter :: Hardware :: Adopted :: Blue :: Hardwarekomponente, die einem Computer die Verbindung zum Netzwerk ermöglicht.
+NIST :: Framework :: Adopted :: Blue :: US-Institut, das Richtlinien und Frameworks für Cybersicherheit entwickelt.
+Nmap :: Tool :: Adopted :: Purple :: Netzwerk-Scanner zur Erkennung von Hosts, Diensten und Sicherheitslücken.
+OAuth :: Protocol :: Adopted :: Blue :: Standard für delegierte Autorisierung, oft für "Login mit..." genutzt.
+OSINT (Open Source Intelligence) :: Intel :: Adopted :: Purple :: Sammlung von Informationen aus öffentlich zugänglichen Quellen.
+OTP :: Authentication :: Adopted :: Blue :: Einmalpasswort, das nur für eine einzige Anmeldung gültig ist.
+Packet Sniffer :: Tool :: Adopted :: Purple :: Tool zum Mitschneiden und Analysieren von Netzwerkdatenverkehr.
+Pass-the-Hash :: Credential Attack :: Adopted :: Red :: Authentifizierung mit dem Hash eines Passworts statt des Klartextpassworts.
+Password Cracking :: Credential Attack :: Adopted :: Red :: Wiederherstellung von Passwörtern durch Erraten, Brute-Force oder Rainbow-Tables.
+Patch Management :: Operations :: Adopted :: Blue :: Prozess des Einspielens von Updates, um Sicherheitslücken in Software zu schließen.
+PCI DSS :: Governance :: Adopted :: Blue :: Sicherheitsstandard für Organisationen, die Kreditkartentransaktionen verarbeiten.
+Pentesting :: Operations :: Adopted :: Purple :: Autorisierte simulierte Angriffe zur Bewertung der Sicherheit eines Systems.
+Perfect Forward Secrecy :: Property :: Adopted :: Blue :: Eigenschaft, die sicherstellt, dass kompromittierte Langzeitschlüssel alte Sitzungen nicht gefährden.
+Persistence :: Exploit :: Adopted :: Red :: Methoden, um den Zugriff auf ein System auch nach Neustarts aufrechtzuerhalten.
+Pharming :: Network Security :: Adopted :: Red :: Umleiten von legitimen Web-Traffic auf gefälschte Seiten durch Manipulation von DNS oder Host-Dateien.
+Phishing :: Social Engineering :: Adopted :: Red :: Betrügerischer Versuch, durch gefälschte Kommunikation an sensible Daten wie Passwörter zu gelangen.
+Phishing Campaign :: Social Engineering :: Adopted :: Red :: Koordinierte Serie von Phishing-Angriffen gegen eine spezifische Gruppe oder Organisation.
+Phishing-as-a-Service (PhaaS) :: Business Model :: Emerging :: Red :: Plattformen, die Phishing-Infrastruktur gegen Gebühr anbieten.
+PKI (Public Key Infrastructure) :: Cryptography :: Adopted :: Blue :: System zur Verwaltung digitaler Zertifikate und Schlüssel für sichere Kommunikation.
+Polymorphic Malware :: Malware :: Adopted :: Red :: Schadsoftware, die ihren Code ständig ändert, um Erkennung zu vermeiden.
+Port Scanner :: Tool :: Adopted :: Purple :: Tool zum Scannen von offenen Ports und Diensten auf einem Zielhost.
+Post-Quantum Cryptography :: Emerging :: Emerging :: Blue :: Kryptographische Algorithmen, die gegen Angriffe durch Quantencomputer resistent sind.
+Pretexting :: Social Engineering :: Adopted :: Red :: Erfinden eines Szenarios, um unter falschem Vorwand Informationen von einem Opfer zu erhalten.
+Privilege Escalation :: Exploit :: Adopted :: Red :: Ausnutzen von Schwachstellen, um höhere Zugriffsrechte als ursprünglich zugewiesen zu erlangen.
+Privileged Account :: Identity :: Adopted :: Blue :: Konto mit erweiterten Rechten, das besonderen Schutz erfordert.
+Process Hollowing :: Malware :: Emerging :: Red :: Ersetzen des Speichers eines legitimen Prozesses durch schädlichen Code zur Tarnung.
+Proxy :: Network :: Adopted :: Purple :: Server, der als Vermittler zwischen Client und Zielserver fungiert.
 Quishing :: Social Engineering :: Emerging :: Red :: Phishing-Angriff, der QR-Codes verwendet, um Opfer auf schädliche Seiten zu leiten.
+Rainbow Table :: Credential Attack :: Adopted :: Red :: Vorberechnete Tabelle von Hashwerten zum schnellen Knacken von Passwörtern.
+Ransomware :: Malware :: Adopted :: Red :: Schadsoftware, die Daten verschlüsselt und ein Lösegeld für die Entschlüsselung fordert.
+Ransomware-as-a-Service (RaaS) :: Business Model :: Emerging :: Red :: Geschäftsmodell, bei dem Ransomware an Affiliates vermietet wird.
+RBAC :: Access Control :: Adopted :: Blue :: Rollenbasierte Zugriffskontrolle, bei der Rechte an Rollen statt Personen vergeben werden.
+Red Team :: Operations :: Adopted :: Red :: Das offensive Sicherheitsteam, das reale Angriffe simuliert, um Schwachstellen zu finden.
+Remote Code Execution (RCE) :: Exploit :: Adopted :: Red :: Schwachstelle, die es Angreifern erlaubt, beliebigen Code auf einem Zielsystem auszuführen.
+RFID Skimming :: Physical Security :: Adopted :: Red :: Auslesen von RFID-Chips (z.B. in Kreditkarten) ohne physischen Kontakt.
+Risk Assessment :: Governance :: Adopted :: Blue :: Bewertung von Risiken durch Analyse von Bedrohungen, Schwachstellen und Auswirkungen.
+Root :: Identity :: Adopted :: Blue :: Superuser-Konto in Unix/Linux-Systemen mit vollständiger Kontrolle.
+Rootkit :: Malware :: Adopted :: Red :: Schadsoftware, die sich tief im System versteckt, um ihre Präsenz zu verbergen.
+RSA :: Encryption :: Adopted :: Blue :: Asymmetrisches Verschlüsselungsverfahren, häufig für Schlüsselaustausch genutzt.
+Salami Slicing :: Fraud :: Niche :: Red :: Betrug durch Anhäufung vieler kleiner, unauffälliger Beträge oder Datenmengen.
+Salting :: Cryptography :: Adopted :: Purple :: Hinzufügen zufälliger Daten zu Passwörtern vor dem Hashen, um Rainbow-Tables zu erschweren.
+Samba :: Network Service :: Adopted :: Purple :: Open-Source-Implementierung von SMB für die Interoperabilität zwischen Linux und Windows.
+SAML :: Protocol :: Adopted :: Blue :: Standard für den Austausch von Authentifizierungs- und Autorisierungsdaten.
+Scareware :: Malware :: Adopted :: Red :: Software, die Nutzer durch gefälschte Warnungen zum Kauf nutzloser Programme drängt.
+Script Kiddie :: General :: Adopted :: Red :: Unerfahrener Angreifer, der vorgefertigte Tools ohne tiefes Verständnis nutzt.
+Secure Disposal :: Physical Security :: Adopted :: Blue :: Sichere Vernichtung von Datenträgern, um Wiederherstellung zu verhindern.
+Secure Enclave :: Purple :: Adopted :: Purple :: A hardware device that securely generates and stores encryption keys. The key is never being exposed to the outside world - the secure enclave provides it's own encryption / decription interface.
+Security Feature Bypass :: Exploit :: Adopted :: Red :: Techniken zum Umgehen von Sicherheitsmechanismen wie ASLR, DEP oder Authentifizierung.
+Self-Signed Certificate :: Cryptography :: Adopted :: Blue :: Zertifikat, das nicht von einer vertrauenswürdigen CA signiert wurde.
+Separation of Duties :: Principle :: Adopted :: Blue :: Prinzip, kritische Aufgaben auf mehrere Personen zu verteilen, um Betrug zu verhindern.
+Service Account :: Identity :: Adopted :: Blue :: Konto für Anwendungen oder Dienste, nicht für menschliche Nutzer.
+Session Hijacking :: Web Security :: Adopted :: Red :: Übernehmen einer aktiven Benutzersitzung durch Stehlen des Session-Tokens.
+Shadow IT :: Governance :: Adopted :: Blue :: Nutzung von IT-Systemen oder Software ohne explizite Genehmigung der IT-Abteilung.
+Shoulder Surfing :: Physical Security :: Adopted :: Red :: Ausspähen von sensiblen Daten durch direkte Beobachtung der Eingabe am Bildschirm oder Keyboard.
+Shredding :: Physical Security :: Adopted :: Blue :: Physisches Zerreißen von Papierdokumenten zur Datenvernichtung.
+Sideloading :: Mobile Security :: Adopted :: Purple :: Installation von Apps aus inoffiziellen Quellen außerhalb der genehmigten App-Stores, was das Risiko von Malware erhöht.
+SIEM :: Defense :: Adopted :: Blue :: Kombination aus Security Information Management und Event Management für Echtzeitanalyse.
+SIEM (Security Information and Event Management) :: Defense :: Adopted :: Blue :: Zentrale Sammlung und Analyse von Sicherheitslogs zur Bedrohungserkennung.
+Silver Ticket :: Credential Attack :: Adopted :: Red :: Gefälschtes Kerberos-Ticket für den Zugriff auf spezifische Dienste.
+Single Sign-On (SSO) :: Authentication :: Adopted :: Blue :: Mechanismus, der einmaliges Anmelden für mehrere Dienste ermöglicht.
+SMB (Server Message Block) :: Network Protocol :: Adopted :: Purple :: Protokoll für Datei- und Druckerfreigabe, häufiges Ziel für Ransomware wie WannaCry.
+Smishing :: Social Engineering :: Adopted :: Red :: SMS-Phishing; Nutzung von Textnachrichten, um Opfer auf schädliche Links zu locken.
+Snort :: Tool :: Adopted :: Blue :: Open-Source-System zur Erkennung und Verhinderung von Netzwerkeintrüchen (IDS/IPS).
+SOAR (Security Orchestration, Automation and Response) :: Defense :: Emerging :: Blue :: Plattform zur Automatisierung von Sicherheitsprozessen und Reaktionen.
+SOC (Security Operations Center) :: Operations :: Adopted :: Blue :: Zentrale Einheit zur kontinuierlichen Überwachung und Abwehr von Cyberangriffen.
+Social Engineering :: Human Security :: Adopted :: Red :: Psychologische Manipulation von Menschen, um Sicherheitsmaßnahmen zu umgehen.
+SPAM :: Email Security :: Adopted :: Blue :: Unerwünschte Massennachrichten, die oft als Vektor für Phishing oder Malware dienen.
+Splunk :: Tool :: Adopted :: Blue :: Führende Plattform für die Analyse großer Datenmengen und Sicherheitslogs.
+Spyware :: Malware :: Adopted :: Red :: Software, die heimlich Benutzeraktivitäten und Daten ausspäht.
+SQL Injection (SQLi) :: Web Security :: Adopted :: Red :: Einschleusen von SQL-Befehlen über Eingabefelder, um Datenbanken zu manipulieren oder auszulesen.
+SSL/TLS :: Cryptography :: Adopted :: Blue :: Protokolle zur sicheren Verschlüsselung der Kommunikation im Internet.
+SSRF (Server-Side Request Forgery) :: Web Security :: Adopted :: Red :: Angriff, bei dem der Server gezwungen wird, Anfragen an interne Systeme zu senden.
+Stingray :: Tool :: Adopted :: Red :: Gerät, das eine Mobilfunkbasisstation imitiert, um Handys in der Umgebung zu orten.
+Subdomain Takeover :: Web Security :: Adopted :: Red :: Übernehmen eines Subdomains, das auf einen nicht mehr existierenden externen Dienst zeigt.
+Subnet :: Network Infrastructure :: Adopted :: Blue :: Logische Unterteilung eines IP-Netzwerks zur besseren Strukturierung und Sicherheit.
+Subnet Mask :: Network Infrastructure :: Adopted :: Blue :: Maske zur Trennung von Netzwerk- und Hostanteil einer IP-Adresse.
+Supply Chain Attack :: Strategic :: Emerging :: Red :: Angriff auf ein Ziel durch Kompromittierung eines Zulieferers oder Drittanbieters in der Lieferkette.
+SYN Flood :: Network Attack :: Adopted :: Red :: DoS-Angriff durch Senden vieler SYN-Pakete ohne Abschluss des Handshakes.
+Tailgating :: Physical Security :: Adopted :: Red :: Physisches Eindringen in gesicherte Bereiche durch Folgen einer autorisierten Person.
+Threat Hunting :: Operations :: Emerging :: Blue :: Proaktive Suche nach versteckten Bedrohungen, die von automatischen Tools übersehen wurden.
+Threat Intelligence :: Intel :: Adopted :: Purple :: Fundiertes Wissen über bestehende oder entstehende Bedrohungen und Akteure.
+Threat Vector :: General :: Adopted :: Purple :: Der Pfad oder das Mittel, über das ein Angreifer Zugriff auf ein System erlangt.
+Tor :: Tool :: Adopted :: Purple :: Netzwerk zur anonymen Kommunikation durch mehrfaches Umleiten des Datenverkehrs.
+TOTP :: Authentication :: Adopted :: Blue :: Zeitbasiertes Einmalpasswort, das alle 30 Sekunden wechselt.
+Trojan :: Malware :: Adopted :: Red :: Schadsoftware, die als nützliches Programm getarnt ist, um Zugang zu verschaffen.
+TTPs (Tactics, Techniques, and Procedures) :: Threat Intel :: Adopted :: Purple :: Verhaltensmuster und Methoden, die von Angreifern verwendet werden.
+Typosquatting :: Web Security :: Adopted :: Red :: Registrierung von Domains mit Tippfehlern bekannter Seiten, um Nutzer auf schädliche Inhalte umzuleiten.
+USB Rubber Ducky :: Tool :: Adopted :: Red :: Werkzeug, das als USB-Stick getarnt Tastatureingaben simuliert.
+Vishing :: Social Engineering :: Adopted :: Red :: Voice-Phishing; betrügerische Angriffe über Telefonanrufe zur Erlangung vertraulicher Informationen.
+VM Escape :: Virtualization :: Emerging :: Red :: Ausbrechen aus einer virtuellen Maschine, um Zugriff auf den darunterliegenden Host oder andere VMs zu erlangen.
+VPN (Virtual Private Network) :: Network :: Adopted :: Blue :: Verschlüsselte Verbindung über ein unsicheres Netzwerk zum Schutz der Daten.
+Vulnerability :: General :: Adopted :: Purple :: Eine Schwachstelle in einem System, die von Angreifern ausgenutzt werden kann, um Schaden zu verursachen.
+Vulnerability Scanning :: Operations :: Adopted :: Blue :: Automatisierter Prozess zur Identifizierung bekannter Sicherheitslücken.
+WAF (Web Application Firewall) :: Defense :: Adopted :: Blue :: Firewall, die speziell HTTP-Traffic filtert, um Webanwendungen zu schützen.
+WAN (Wide Area Network) :: Network Infrastructure :: Adopted :: Blue :: Weitverkehrsnetz, das über große geografische Distanzen reicht.
+WannaCry :: Ransomware :: Adopted :: Red :: Ransomware, die sich über die SMB-Schwachstelle EternalBlue weltweit verbreitete.
+War Driving :: Network Attack :: Niche :: Red :: Aufspüren von WLAN-Netzwerken aus einem fahrenden Fahrzeug heraus.
+Watering Hole :: Network Security :: Adopted :: Red :: Kompromittierung von Websites, die von einer spezifischen Zielgruppe häufig besucht werden.
+Web Application :: Infrastructure :: Adopted :: Purple :: Software, die über einen Browser zugänglich ist und oft primäres Ziel von Angriffen darstellt.
+WebAuthn :: Standard :: Adopted :: Blue :: W3C-Standard für Web-Authentifizierung, Teil von FIDO2.
+White Hat :: General :: Adopted :: Red :: Ethischer Hacker, der Systeme testet, um Sicherheitslücken zu schließen.
+WiFi Pineapple :: Tool :: Adopted :: Red :: Gerät zur Durchführung von WLAN-Sicherheitsaudits und Man-in-the-Middle-Angriffen.
+Windows Unquoted Service Path :: Windows Security :: Adopted :: Red :: Konfigurationsfehler, bei dem Dienstpfade Leerzeichen enthalten und zur Ausführung von Malware führen.
+Wiper :: Malware :: Adopted :: Red :: Schadsoftware, die primär darauf abzielt, Daten unwiederbringlich zu löschen statt zu stehlen.
+Worm :: Malware :: Adopted :: Red :: Sich selbst replizierende Malware, die sich ohne Nutzerinteraktion über Netzwerke verbreitet.
+WPA3 :: Protocol :: Emerging :: Blue :: Aktuellster Sicherheitsstandard für WLAN-Verschlüsselung.
+XXE (XML External Entity) :: Web Security :: Adopted :: Red :: Ausnutzen von XML-Parsern, um auf interne Dateien zuzugreifen.
+YubiKey :: Hardware :: Adopted :: Blue :: Hardware-Token für starke Zwei-Faktor-Authentifizierung.
+Zero Trust :: Architecture :: Emerging :: Blue :: Sicherheitsmodell, das keinem Nutzer oder Gerät innerhalb oder außerhalb des Netzwerks vertraut.
+Zero-Day :: Exploit :: Adopted :: Red :: Eine Schwachstelle, die dem Hersteller unbekannt ist und für die es noch keinen Patch gibt.

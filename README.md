@@ -8,7 +8,8 @@ Automatically suggests new terms to be added via Google's Suggestions-API.
 
 # Installation
 
-`pip install -r requirements.txt`
+`pip install -r requirements.txt` then
+
 `python3 main.py`
 
 It does not get simpler than this.
