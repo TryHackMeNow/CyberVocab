@@ -1,6 +1,7 @@
 # CyberSec Vocabulary — Term :: Category :: Adoption :: Team :: Definition
 ACL :: Access Control :: Adopted :: Blue :: Liste von Berechtigungen, die festlegt, wer auf welche Ressourcen zugreifen darf.
 Active Directory :: Identity :: Adopted :: Blue :: Microsoft-Dienst zur Verwaltung von Benutzern, Gruppen und Berechtigungen in Netzwerken.
+added :: General :: Adopted :: Purple :: 
 Advanced Persistent Threat (APT) :: Threat Intel :: Adopted :: Red :: Langfristige, gezielte Angriffe, oft staatlich unterstützt, die unentdeckt im Netzwerk verbleiben.
 Adware :: Malware :: Adopted :: Red :: Software, die unerwünschte Werbung einblendet und oft Daten sammelt.
 AES :: Encryption :: Adopted :: Blue :: Weit verbreiteter Verschlüsselungsstandard für symmetrische Schlüssel.
