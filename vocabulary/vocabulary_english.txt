@@ -1,0 +1,88 @@
+Sideloading :: Mobile Security :: Adopted :: Purple :: Installing applications from unofficial sources outside of official app stores, increasing the risk of malware infection.
+Phishing :: Social Engineering :: Adopted :: Red :: Fraudulent attempt to obtain sensitive information by masquerading as a trustworthy entity in electronic communication.
+Vishing :: Social Engineering :: Adopted :: Red :: Voice phishing; using phone calls to deceive individuals into revealing personal or financial information.
+Smishing :: Social Engineering :: Adopted :: Red :: SMS phishing; sending deceptive text messages to trick recipients into clicking malicious links or revealing data.
+Tailgating :: Physical Security :: Adopted :: Red :: Gaining unauthorized physical access by closely following an authorized person through a secured entrance.
+typosquatting :: Web Security :: Adopted :: Red :: Registering domains with misspelled names of popular websites to redirect users and steal information.
+Impersonation :: Social Engineering :: Adopted :: Red :: Pretending to be a legitimate user, system, or organization to gain trust and access.
+Waterholing :: Network Security :: Adopted :: Red :: Compromising websites frequently visited by a target group to deliver malware to their systems.
+Shoulder-Surfing :: Physical Security :: Adopted :: Red :: Observing someone's screen or keyboard to steal passwords, PINs, or other confidential data.
+Dumpster-Diving :: Physical Security :: Adopted :: Red :: Searching through trash to find discarded documents or devices containing sensitive information.
+Jailbreaking :: Mobile Security :: Adopted :: Red :: Removing software restrictions on iOS devices to install unauthorized apps and gain root access.
+Cross-Site Scripting (XSS) :: Web Security :: Adopted :: Red :: Injecting malicious scripts into web pages viewed by others, often to steal session cookies or credentials.
+Cross-Site Request Forgery (CSRF) :: Web Security :: Adopted :: Red :: Forcing a logged-in user to execute unwanted actions on a web application without their consent.
+SQL injection (SQLi) :: Web Security :: Adopted :: Red :: Inserting malicious SQL queries via input fields to manipulate or extract data from a database.
+DDoS Attack :: Network Security :: Adopted :: Red :: Distributed Denial of Service; overwhelming a target with traffic from multiple sources to disrupt service.
+VM escape :: Virtualization :: Emerging :: Red :: Exploiting a vulnerability to break out of a virtual machine and access the host system or other VMs.
+Legacy System :: Infrastructure :: Adopted :: Blue :: Outdated hardware or software that is still in use but no longer supported or updated.
+Web Application :: Infrastructure :: Adopted :: Purple :: Software accessed via a web browser, often a primary target for attacks due to public exposure.
+Buffer Overflow :: Exploit :: Adopted :: Red :: Sending more data to a buffer than it can hold, overwriting adjacent memory and potentially executing arbitrary code.
+Memory Injection :: Exploit :: Emerging :: Red :: Injecting malicious code directly into the memory space of a running process to evade detection.
+Process Hollowing :: Malware :: Emerging :: Red :: Creating a legitimate process in a suspended state and replacing its memory with malicious code.
+Privilege Escalation :: Exploit :: Adopted :: Red :: Exploiting a vulnerability to gain higher-level permissions than originally granted.
+Vulnerability :: General :: Adopted :: Purple :: A weakness in a system, process, or configuration that can be exploited by a threat actor.
+Windows Unquoted Service Path :: Windows Security :: Adopted :: Red :: A misconfiguration where service paths with spaces are not enclosed in quotes, allowing execution of malicious binaries.
+Security feature bypass :: Exploit :: Adopted :: Red :: Techniques used to circumvent security mechanisms like ASLR, DEP, or antivirus software.
+Directory traversal :: Web Security :: Adopted :: Red :: Accessing files and directories outside the web root folder by manipulating file path inputs.
+Password cracking :: Credential Attack :: Adopted :: Red :: Recovering passwords from stored data using brute force, dictionary attacks, or rainbow tables.
+Remote code execution :: Exploit :: Adopted :: Red :: A vulnerability that allows an attacker to execute arbitrary code on a target system remotely.
+SPAM :: Email Security :: Adopted :: Blue :: Unsolicited bulk messages, often used as a delivery method for phishing or malware.
+Chain letters :: Social Engineering :: Niche :: Red :: Messages urging recipients to forward them, often containing hoaxes or malware.
+Baiting :: Social Engineering :: Adopted :: Red :: Luring victims with a promise of free goods or services to deliver malware or steal information.
+Brand impersonation :: Social Engineering :: Adopted :: Red :: Falsely representing a well-known brand to deceive users into trusting a malicious site or email.
+Pharming :: Network Security :: Adopted :: Red :: Redirecting web traffic to a fake site by manipulating DNS settings or the host file.
+Pretexting :: Social Engineering :: Adopted :: Red :: Creating a fabricated scenario to obtain information or access from a victim.
+Supply chain failure :: Strategic :: Emerging :: Red :: Compromising a third-party vendor or software update mechanism to reach the final target.
+default credentials :: Configuration :: Adopted :: Red :: Factory-set usernames and passwords that are often left unchanged, providing easy access.
+threat vector :: General :: Adopted :: Purple :: The method or path used by an attacker to gain unauthorized access to a system or network.
+attack surface :: General :: Adopted :: Blue :: The total number of points where an attacker can attempt to enter or extract data from a system.
+attack surface reduction :: Strategy :: Adopted :: Blue :: Minimizing the number of potential attack vectors through configuration and policy.
+blue team :: Operations :: Adopted :: Blue :: The defensive security team responsible for protecting systems, detecting threats, and responding to incidents.
+red team :: Operations :: Adopted :: Red :: The offensive security team that simulates real-world attacks to test and improve defenses.
+pentesting :: Operations :: Adopted :: Purple :: Authorized simulated attacks to identify and exploit vulnerabilities in a controlled manner.
+hacker :: General :: Adopted :: Purple :: An individual skilled in computer systems, often categorized by intent (white, black, or gray hat).
+hacking :: General :: Adopted :: Purple :: The act of identifying and exploiting weaknesses in computer systems or networks.
+social engineering :: Human Security :: Adopted :: Red :: Manipulating people into divulging confidential information or performing actions that compromise security.
+phishing campaign :: Social Engineering :: Adopted :: Red :: A coordinated series of phishing attacks targeting a specific organization or group.
+Shadow IT :: Governance :: Adopted :: Blue :: The use of IT systems, software, or services without explicit approval from the IT department.
+Insider :: Human Security :: Adopted :: Purple :: A current or former employee, contractor, or partner who has inside knowledge and access.
+Blackmail :: Social Engineering :: Adopted :: Red :: Threatening to reveal sensitive information unless demands are met.
+Advanced Persistent Thread :: Threat Intel :: Adopted :: Red :: A prolonged and targeted cyberattack in which an intruder gains access and remains undetected for an extended period.
+APT :: Threat Intel :: Adopted :: Red :: Acronym for Advanced Persistent Threat, often used to describe sophisticated, state-sponsored attacks.
+script kiddie :: General :: Adopted :: Red :: An unskilled individual who uses existing tools or scripts to launch attacks without understanding the underlying mechanisms.
+white hat :: General :: Adopted :: Red :: An ethical hacker who uses their skills to improve security and find vulnerabilities legally.
+black hat :: General :: Adopted :: Red :: A malicious hacker who breaks into systems for personal gain, theft, or damage.
+SMB :: Network Protocol :: Adopted :: Purple :: Server Message Block; a protocol for sharing files, printers, and serial ports over a network.
+samba :: Network Service :: Adopted :: Purple :: Open-source software that implements the SMB protocol for Unix-like systems.
+BSI :: Governance :: Adopted :: Blue :: Bundesamt für Sicherheit in der Informationstechnik; Germany's Federal Office for Information Security.
+grundschutz :: Governance :: Adopted :: Blue :: A methodology by BSI for establishing and maintaining information security.
+ISO 27k :: Governance :: Adopted :: Blue :: Short for ISO/IEC 27000 family, a set of standards for information security management.
+Authentication :: Identity :: Adopted :: Purple :: The process of verifying the identity of a user, device, or system.
+Zero Trust :: Architecture :: Emerging :: Blue :: A security model that requires strict identity verification for every user and device, regardless of location.
+DMZ :: Network Security :: Adopted :: Blue :: Demilitarized Zone; a network segment that sits between an internal network and an external network (e.g., the internet).
+LAN :: Network Infrastructure :: Adopted :: Blue :: Local Area Network; a network that connects computers within a limited area like a building.
+WAN :: Network Infrastructure :: Adopted :: Blue :: Wide Area Network; a network that spans a large geographical distance.
+network adapter :: Hardware :: Adopted :: Blue :: A hardware component that connects a computer to a network.
+subnet :: Network Infrastructure :: Adopted :: Blue :: A logical subdivision of an IP network.
+subnet mask :: Network Infrastructure :: Adopted :: Blue :: A number that defines which part of an IP address belongs to the network and which part to the host.
+Malware :: General :: Adopted :: Red :: Malicious software designed to damage, disrupt, or gain unauthorized access to a system.
+Ransomware :: Malware :: Adopted :: Red :: Malware that encrypts files and demands payment for the decryption key.
+Antivirus :: Defense :: Adopted :: Blue :: Software designed to detect, prevent, and remove malware.
+EDR :: Defense :: Adopted :: Blue :: Endpoint Detection and Response; tools that monitor endpoints for threats and enable rapid response.
+endpoint detection and response :: Defense :: Adopted :: Blue :: A security solution that continuously monitors and responds to threats on endpoints.
+SIEM :: Defense :: Adopted :: Blue :: Security Information and Event Management; aggregates and analyzes log data for threat detection.
+Splunk :: Tool :: Adopted :: Blue :: A platform for searching, monitoring, and analyzing machine-generated data, often used in security.
+Snort :: Tool :: Adopted :: Blue :: An open-source network intrusion detection and prevention system.
+nmap :: Tool :: Adopted :: Purple :: A network scanning tool used for discovery and security auditing.
+CIA :: General :: Adopted :: Blue :: Confidentiality, Integrity, Availability; the core principles of information security.
+Confidentiality :: Principle :: Adopted :: Blue :: Ensuring that information is accessible only to those authorized to have access.
+Authenticity :: Principle :: Adopted :: Blue :: Verifying that users and systems are who they claim to be.
+Integrity :: Principle :: Adopted :: Blue :: Protecting data from unauthorized modification or destruction.
+Cyber resillience :: Strategy :: Emerging :: Blue :: The ability to prepare for, respond to, and recover from cyberattacks while maintaining operations.
+firewall :: Network Security :: Adopted :: Blue :: A network security system that monitors and controls incoming and outgoing traffic based on rules.
+encryption :: Cryptography :: Adopted :: Purple :: The process of encoding data to prevent unauthorized access.
+Security Operations Center :: Operations :: Adopted :: Blue :: A centralized team responsible for monitoring, detecting, and responding to security incidents.
+SOC :: Operations :: Adopted :: Blue :: Acronym for Security Operations Center.
+Botnet :: Malware :: Adopted :: Red :: A network of compromised devices controlled by an attacker for malicious purposes.
+Active Directory :: Identity :: Adopted :: Blue :: Microsoft's directory service for managing users, computers, and resources in a Windows domain network.
+

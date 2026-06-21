@@ -1,0 +1,149 @@
+@font-face{
+    font-family: "AkkuratMono-Regular";
+    src: url("https://db.onlinewebfonts.com/t/2ae387e9fd826eca2b02f780e91333c7.eot");
+    src: url("https://db.onlinewebfonts.com/t/2ae387e9fd826eca2b02f780e91333c7.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/2ae387e9fd826eca2b02f780e91333c7.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/2ae387e9fd826eca2b02f780e91333c7.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/2ae387e9fd826eca2b02f780e91333c7.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/2ae387e9fd826eca2b02f780e91333c7.svg#AkkuratMono-Regular")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+:root {
+  --bg-color: #051018;
+  --panel-color: #0e1d30;
+  --panel-alt-color: #11232f;
+  --border-color: #1d324d;
+  --text-color: #d2dce6;
+  --term-def-color: #b5c6d5;
+  --accent-color: #92d3ff;
+  --border-radius-panel: 0.7rem;
+  --border-width-panel: 1px;
+  --padding-horizontal-panel: 0.875rem;
+  --padding-vertical-panel: 1rem;
+  --padding-vertical-pill: 0.25rem;
+  --padding-horizontal-pill: 0.5rem;
+  --border-radius-pill: 0.2rem;
+  --gap-panel: 1rem;
+  --font-app: 'Inter';
+  --font-mono: 'AkkuratMono-Regular';
+
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-app), sans-serif;
+}
+
+.text-color-default {
+  color: var(--text-color) !important;
+}
+
+.text-term-def-color {
+  color: var(--term-def-color);
+}
+
+.text-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+.text-proportional {
+  font-family: var(--font-app);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-muted {
+  opacity: 0.6;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.bg-color {
+  background-color: var(--bg-color);
+}
+
+.accent-border-color {
+  border-color: var(--accent-color) !important;
+  border-width: 2px;
+}
+
+.banner {
+  background: linear-gradient(180deg, var(--pane-color) 0%, var(--bg-color) 100%);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-vertical-panel) var(--padding-horizontal-panel);
+  gap: var(--gap-panel);
+  border-bottom: var(--border-width-panel) solid var(--border-color);
+}
+
+.justify {
+  justify-content: space-between;
+}
+
+.panel {
+  background-color: var(--panel-color);
+  align-items: left;
+  border: var(--border-width-panel) solid var(--border-color);
+  border-radius: var(--border-radius-panel);
+  padding: var(--padding-vertical-panel) var(--padding-horizontal-panel);
+}
+
+.pill {
+  background-color: var(--panel-alt-color);
+  border-radius: var(--border-radius-pill);
+  padding: var(--padding-vertical-pill) var(--padding-horizontal-pill);
+}
+
+.suggestion-item {
+  padding: var(--padding-vertical-pill) var(--padding-horizontal-panel);
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: var(--bg-color);
+}
+
+.suggestion-item-active {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+}
+
+/* Prevent menu items from wrapping when there is room in the popup */
+.q-item__label,
+.q-item__section,
+.nicegui-menu .q-item__label,
+.nicegui-menu .q-item__section {
+  white-space: nowrap;
+}
+
+/* Search bar + its autocomplete dropdown should look like one continuous
+   frame: the bar's bottom corners and the menu's top corners are flattened,
+   and the menu sits flush against the bar with no border/gap between them,
+   so it reads as the search bar having simply expanded downward. The menu
+   is hidden (not just empty) when closed, so the flattened bottom corners
+   on the bar are harmless and unnoticeable while idle. */
+.search-bar {
+  border-radius: var(--border-radius-panel) var(--border-radius-panel) 0 0;
+}
+
+.search-suggestion-menu {
+  border-radius: 0 0 var(--border-radius-panel) var(--border-radius-panel);
+  border-top: none !important;
+  margin-top: -1px; /* overlap the bar's bottom border by its own width */
+}
+
+/* Narrower suggestion dropdown for the "Add New Term" field. Unlike the
+   full-width search bar, this one doesn't need to visually fuse with its
+   input, since it sits inside a larger multi-field card rather than being
+   the entire frame by itself. */
+.term-suggestion-menu {
+  margin-top: 0.25rem;
+}
