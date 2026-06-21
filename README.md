@@ -1,21 +1,26 @@
 # CyberVocab
 
-A vocabulary browser with convenient query, update, import and export functionality.
-Asks Claude for definitions of terms not contained within the data store. 
-Suggests new entries to be added via Google's suggestion API.
+A vocabulary-browser frontend with convenient query, update, import and export functionality.
+User may call Claude for definitions of terms not contained within the data store. 
+Automatically suggests new entries to be added via Google's suggestion API.
 
 ![Screenshot](./CyberVocab_Screenshot.png)
 
-No installation hustle. Simply run with:
+# Installation
 
-'python3 main.py' 
+`pip install -r requirements.txt`
+`python3 main.py`
 
-This opens the vocabulary browser on your system. For LLM-lookup to be available, environment variable ANTHROPIC_API_KEY must be set. Additionally the anthropic python package must have been installed with
+It does not get simpler than this.
 
-'pip install anthropic'
+For the AI-lookup-feature, just must have an anthropic API key and the environment variable ANTHROPIC_API_KEY must be set accordingly.
 
-Build using NiceGUI (www.nicegui.io).
+# Contributions
 
-MIT-License.
+The user interface was build using [NiceGUI](https://nicegui.io).
+Icons were designed in agentic co-work with Claude.
 
-Updates to follow.
+# License
+
+MIT-License
+

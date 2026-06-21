@@ -273,8 +273,8 @@ def build_search_pane() -> None:
             gui.search_input = (
                 ui.input(placeholder="Search Vocabulary (e.g. Malware, Phishing...)",
                          validation = handle_search_input_validation)
-                .classes("grow dense")
-                .props(f"borderless dense debounce={SUGGESTION_DEBOUNCE_MS}")
+                .classes("grow")
+                .props(f"borderless dense hide-bottom-space debounce={SUGGESTION_DEBOUNCE_MS}")
             )
             with gui.search_input.add_slot("prepend"):
                 ui.icon("search").classes("")

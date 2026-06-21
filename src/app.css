@@ -124,20 +124,18 @@ body {
   white-space: nowrap;
 }
 
-/* Search bar + its autocomplete dropdown should look like one continuous
-   frame: the bar's bottom corners and the menu's top corners are flattened,
-   and the menu sits flush against the bar with no border/gap between them,
-   so it reads as the search bar having simply expanded downward. The menu
-   is hidden (not just empty) when closed, so the flattened bottom corners
-   on the bar are harmless and unnoticeable while idle. */
+/* The search bar is a fully rounded, self-contained frame. Its autocomplete
+   dropdown is a separate floating panel below it (same panel styling, its
+   own full rounding, with a small gap) rather than a fused continuation of
+   the bar's shape - this keeps the bar's corners round on all sides. */
 .search-bar {
-  border-radius: var(--border-radius-panel) var(--border-radius-panel) 0 0;
+  border-radius: var(--border-radius-panel);
+  padding: 0.3rem var(--padding-horizontal-panel);
 }
 
 .search-suggestion-menu {
-  border-radius: 0 0 var(--border-radius-panel) var(--border-radius-panel);
-  border-top: none !important;
-  margin-top: -1px; /* overlap the bar's bottom border by its own width */
+  border-radius: var(--border-radius-panel);
+  margin-top: 0.5rem;
 }
 
 /* Narrower suggestion dropdown for the "Add New Term" field. Unlike the
