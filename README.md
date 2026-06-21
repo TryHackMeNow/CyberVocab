@@ -4,7 +4,7 @@ A vocabulary browser with convenient query, update, import and export functional
 Asks Claude for definitions of terms not contained within the data store. 
 Suggests new entries to be added via Google's suggestion API.
 
-![Network Overview](./CyberVocab Screenshot.png)
+![Screenshot](./CyberVocab_Screenshot.png)
 
 No installation hustle. Simply run with:
 
