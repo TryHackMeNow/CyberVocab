@@ -12,9 +12,9 @@ Automatically suggests new terms to be added via Google's Suggestions-API.
 
 `python3 main.py`
 
-It does not get simpler than this.
+It does not get simpler than this. The webpage is served on port 8080.
 
-For the AI-lookup-feature, just must have an anthropic API key and the environment variable ANTHROPIC_API_KEY must be set accordingly.
+For the AI-lookup-feature, you must have an anthropic API key and the environment variable ANTHROPIC_API_KEY must be set accordingly.
 
 # Contributions
 
