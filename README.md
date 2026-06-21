@@ -1,10 +1,10 @@
 # CyberVocab
 
 A vocabulary-browser frontend with convenient query, update, import and export functionality.
-User may call Claude for definitions of terms not contained within the data store. 
-Automatically suggests new entries to be added via Google's suggestion API.
+Claude can be called for definitions of terms not contained within the data store. 
+Automatically suggests new terms to be added via Google's Suggestions-API.
 
-![Screenshot](./CyberVocab_Screenshot.png)
+![Screenshot](./Screenshot.png)
 
 # Installation
 
